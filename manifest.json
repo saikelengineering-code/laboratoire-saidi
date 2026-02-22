@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO META TAGS OPTIMISÉS -->
+    <title>Laboratoire Saidi | Contrôle Qualité Béton & Ingénierie - Akbou, Béjaïa</title>
+    <meta name="description" content="Laboratoire agréé de contrôle qualité et conformité des matériaux (Béton, Sol, Route) et bureau d'ingénierie multi-disciplinaire à Akbou, Béjaïa. Expert judiciaire agréé.">
+    <meta name="keywords" content="laboratoire contrôle qualité béton Akbou, étude sol géotechnique Béjaïa, expert génie civil Algérie, topographie Akbou, contrôle conformité matériaux, béton armé précontraint, expert judiciaire Béjaïa">
+    <meta name="author" content="Laboratoire Saidi">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="DZ-06">
+    <meta name="geo.placename" content="Akbou">
+    <meta name="geo.position" content="36.459399;4.538716">
+    <meta name="ICBM" content="36.459399, 4.538716">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.laboratoire-saidi.dz/">
+    <meta property="og:title" content="Laboratoire Saidi | Contrôle Qualité & Ingénierie - Akbou">
+    <meta property="og:description" content="Laboratoire agréé de contrôle qualité béton, sol, route et bureau d'ingénierie à Akbou, Béjaïa. Expert judiciaire et assurance agréé.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200">
+    <meta property="og:locale" content="fr_DZ">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.laboratoire-saidi.dz/">
+    <meta property="twitter:title" content="Laboratoire Saidi | Contrôle Qualité & Ingénierie">
+    <meta property="twitter:description" content="Laboratoire agréé de contrôle qualité et ingénierie à Akbou, Béjaïa">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0c2d48">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Labo Saidi">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
+    
+    <!-- Polices Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Icônes FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Laboratoire Saidi",
+        "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800",
+        "description": "Laboratoire de contrôle qualité et conformité des matériaux et bureau d'ingénierie multi-disciplinaire",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Cité RHP 130/200, Local E17 (Derrière CASNOS)",
+            "addressLocality": "Akbou",
+            "addressRegion": "Béjaïa",
+            "postalCode": "06000",
+            "addressCountry": "DZ"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 36.459399,
+            "longitude": 4.538716
+        },
+        "url": "https://www.laboratoire-saidi.dz",
+        "telephone": "+21334338099",
+        "email": "bet.saidi.engineering@gmail.com",
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+                "opens": "08:00",
+                "closes": "17:00"
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/LaboratoireSaidi"
+        ]
+    }
+    </script>
+
+    <style>
+        /* --- VARIABLES & RESET --- */
+        :root {
+            --primary-color: #0c2d48;
+            --secondary-color: #2e8bc0;
+            --accent-color: #ff6b35;
+            --light-bg: #f4f7f6;
+            --white: #ffffff;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* --- NAVIGATION --- */
+        header {
+            position: fixed; top: 0; width: 100%; z-index: 1000;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            transition: var(--transition);
+        }
+
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1rem 5%; max-width: 1400px; margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.4rem; font-weight: 800; color: var(--primary-color);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .logo i { color: var(--accent-color); font-size: 1.8rem; }
+        .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+        .logo-text small { font-size: 0.7rem; color: var(--text-light); font-weight: 400; }
+
+        .nav-links { display: flex; gap: 25px; }
+        .nav-links a {
+            font-weight: 500; color: var(--primary-color);
+            position: relative; font-size: 0.95rem;
+        }
+        .nav-links a::after {
+            content: ''; position: absolute; width: 0; height: 2px;
+            bottom: -5px; left: 0; background-color: var(--accent-color);
+            transition: var(--transition);
+        }
+        .nav-links a:hover::after { width: 100%; }
+
+        .btn-contact {
+            background: var(--accent-color); color: var(--white);
+            padding: 10px 25px; border-radius: 50px;
+            font-weight: 600; transition: var(--transition);
+            font-size: 0.9rem;
+        }
+        .btn-contact:hover { background: var(--primary-color); transform: translateY(-2px); }
+
+        .burger { display: none; cursor: pointer; font-size: 1.5rem; color: var(--primary-color); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            height: 100vh; min-height: 600px;
+            background: linear-gradient(135deg, rgba(12,45,72,0.9) 0%, rgba(12,45,72,0.85) 100%), 
+                        url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center;
+            background-attachment: fixed;
+            display: flex; align-items: center; justify-content: center;
+            text-align: center; color: var(--white); padding: 0 20px;
+        }
+
+        .hero-content { max-width: 900px; animation: fadeInUp 1s ease-out; }
+        .hero-badge {
+            display: inline-block; background: rgba(255,255,255,0.15);
+            padding: 8px 20px; border-radius: 50px; font-size: 0.85rem;
+            margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.3);
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+        .hero h1 { font-size: 3.2rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero-subtitle { font-size: 1.3rem; margin-bottom: 15px; opacity: 0.95; font-weight: 300; }
+        .hero-description { font-size: 1.1rem; margin-bottom: 35px; opacity: 0.9; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+        .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn-hero {
+            padding: 14px 32px; border-radius: 5px; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.5px;
+            transition: var(--transition); font-size: 0.9rem; cursor: pointer;
+        }
+        .btn-primary { background: var(--accent-color); color: var(--white); border: 2px solid var(--accent-color); }
+        .btn-outline { border: 2px solid var(--white); color: var(--white); background: transparent; }
+        .btn-primary:hover { background: var(--white); color: var(--accent-color); }
+        .btn-outline:hover { background: var(--white); color: var(--primary-color); }
+
+        /* --- STATS BAR --- */
+        .stats-bar {
+            background: var(--white);
+            padding: 50px 0;
+            margin-top: -80px;
+            position: relative;
+            z-index: 100;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 15px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        .stat-item {
+            padding: 20px;
+            transition: var(--transition);
+        }
+        .stat-item:hover { transform: translateY(-5px); }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .stat-label {
+            font-size: 1rem;
+            color: var(--text-light);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* --- SECTIONS GÉNÉRALES --- */
+        section { padding: 80px 5%; max-width: 1400px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 2.3rem; color: var(--primary-color); margin-bottom: 15px; }
+        .section-header .line { width: 70px; height: 4px; background: var(--accent-color); margin: 0 auto; }
+        .section-header p { margin-top: 20px; color: var(--text-light); max-width: 650px; margin-left: auto; margin-right: auto; }
+
+        /* --- SERVICES GRID --- */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 25px; }
+        
+        .service-card {
+            background: var(--white); padding: 35px 30px; border-radius: 15px;
+            box-shadow: var(--shadow); transition: var(--transition);
+            border-bottom: 4px solid transparent; position: relative;
+        }
+        .service-card:hover { transform: translateY(-8px); border-bottom-color: var(--accent-color); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        
+        .service-icon {
+            font-size: 2.3rem; color: var(--secondary-color);
+            margin-bottom: 20px; width: 65px; height: 65px;
+            background: rgba(46, 139, 192, 0.1); border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .service-card h3 { margin-bottom: 15px; color: var(--primary-color); font-size: 1.3rem; }
+        .service-card p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 15px; }
+        
+        .service-card ul { list-style: none; margin-top: 10px; }
+        .service-card ul li {
+            font-size: 0.9rem; color: var(--text-light);
+            margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px;
+        }
+        .service-card ul li i { color: var(--accent-color); font-size: 0.75rem; margin-top: 4px; }
+
+        /* --- PROJETS SECTION --- */
+        .projets-section { background: var(--white); }
+        .projets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .projet-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .projet-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        .projet-image {
+            height: 220px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: rgba(255,255,255,0.3);
+        }
+        .projet-content { padding: 25px; }
+        .projet-content h3 { color: var(--primary-color); margin-bottom: 10px; font-size: 1.3rem; }
+        .projet-content p { color: var(--text-light); margin-bottom: 15px; }
+        .projet-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+        .tag {
+            background: var(--light-bg);
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* --- ACCREDITATIONS --- */
+        .accreditations {
+            background: var(--primary-color); color: var(--white);
+            padding: 70px 5%; text-align: center;
+        }
+        .accreditations .section-header h2 { color: var(--white); }
+        .accreditations .section-header .line { background: var(--accent-color); }
+        
+        .acc-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 25px; margin-top: 40px; }
+        .acc-item {
+            background: rgba(255,255,255,0.1); padding: 25px 20px;
+            border-radius: 12px; backdrop-filter: blur(5px);
+            flex: 1; min-width: 220px; max-width: 280px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: var(--transition);
+        }
+        .acc-item:hover { background: rgba(255,255,255,0.15); transform: translateY(-5px); }
+        .acc-item i { font-size: 2.2rem; color: var(--accent-color); margin-bottom: 15px; }
+        .acc-item h4 { font-size: 1.1rem; margin-bottom: 8px; font-weight: 600; }
+        .acc-item p { font-size: 0.9rem; opacity: 0.85; }
+
+        /* --- FAQ SECTION --- */
+        .faq-section { background: var(--white); }
+        .faq-container { max-width: 900px; margin: 0 auto; }
+        
+        .faq-item {
+            background: var(--light-bg);
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: var(--transition);
+        }
+        .faq-item:hover { box-shadow: 0 5px 20px rgba(0,0,0,0.12); }
+        
+        .faq-question {
+            width: 100%;
+            padding: 22px 25px;
+            background: none;
+            border: none;
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--primary-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        .faq-question:hover { background: rgba(255,255,255,0.5); }
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+        .faq-item.active .faq-question { background: var(--white); color: var(--accent-color); }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 25px;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 25px 22px;
+        }
+
+        /* --- QR CODE SECTION --- */
+        .qr-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 60px 5%;
+            text-align: center;
+        }
+        .qr-section h2 { color: var(--white); margin-bottom: 15px; }
+        .qr-section .line { background: var(--accent-color); margin: 20px auto; }
+        .qr-section > p { opacity: 0.9; margin-bottom: 40px; }
+        
+        .qr-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .qr-card {
+            background: rgba(255,255,255,0.95);
+            padding: 30px;
+            border-radius: 15px;
+            color: var(--text-dark);
+        }
+        .qr-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        .qr-card img {
+            border: 3px solid var(--light-bg);
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .qr-card p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* --- CONTACT SECTION --- */
+        .contact-section { background: var(--white); }
+        .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+        
+        .contact-info h3 { margin-bottom: 25px; color: var(--primary-color); font-size: 1.8rem; }
+        .contact-info > p { margin-bottom: 30px; color: var(--text-light); }
+        
+        .info-item { display: flex; align-items: flex-start; margin-bottom: 22px; gap: 15px; }
+        .info-item i {
+            width: 45px; height: 45px; background: var(--light-bg);
+            color: var(--accent-color); border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem; flex-shrink: 0;
+        }
+        .info-item .text { line-height: 1.5; }
+        .info-item .text strong { display: block; color: var(--primary-color); margin-bottom: 3px; font-size: 0.95rem; }
+        .info-item .text span, .info-item .text a { color: var(--text-light); font-size: 0.95rem; }
+        .info-item .text a:hover { color: var(--secondary-color); }
+        
+        .address-box {
+            background: var(--light-bg); padding: 20px; border-radius: 10px;
+            margin: 25px 0; border-left: 4px solid var(--accent-color);
+        }
+        .address-box strong { color: var(--primary-color); display: block; margin-bottom: 8px; }
+        
+        .social-links { margin-top: 30px; display: flex; gap: 12px; flex-wrap: wrap; }
+        .social-btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 48px; height: 48px; background: var(--primary-color);
+            color: var(--white); border-radius: 12px; font-size: 1.2rem;
+            transition: var(--transition); text-decoration: none;
+        }
+        .social-btn:hover { background: var(--accent-color); transform: translateY(-3px); }
+        .social-btn.fb { background: #1877F2; }
+        .social-btn.fb:hover { background: #165dbf; }
+        .social-btn.wa { background: #25D366; }
+        .social-btn.wa:hover { background: #1da851; }
+        .social-btn.tg { background: #0088cc; }
+        .social-btn.tg:hover { background: #006699; }
+        .social-btn.email { background: #ea4335; }
+        .social-btn.email:hover { background: #c5221f; }
+
+        /* Formulaire de contact */
+        .contact-form {
+            background: var(--light-bg);
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+        .contact-form h3 { margin-bottom: 25px; color: var(--primary-color); font-size: 1.5rem; }
+        
+        .form-group { margin-bottom: 20px; }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+        .form-group label .required { color: var(--accent-color); }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            background: var(--white);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(46, 139, 192, 0.1);
+        }
+        textarea.form-control { resize: vertical; min-height: 120px; }
+        
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            background: var(--accent-color);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .btn-submit:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(12, 45, 72, 0.3);
+        }
+        .btn-submit i { margin-right: 8px; }
+
+        /* Carte Google Maps */
+        .map-container {
+            grid-column: 1 / -1;
+            margin-top: 50px;
+        }
+        .map-container h3 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+        .map-wrapper {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border: 3px solid var(--white);
+            position: relative;
+        }
+        .map-wrapper iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            display: block;
+        }
+        .map-info {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 10px;
+        }
+        .map-info p {
+            margin: 0;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        .map-info a {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+        .map-info a:hover { text-decoration: underline; }
+
+        /* --- TEMOIGNAGES --- */
+        .temoignages-section { background: var(--light-bg); }
+        .temoignages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .temoignage-card {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        .temoignage-card::before {
+            content: '"';
+            font-size: 5rem;
+            color: var(--accent-color);
+            opacity: 0.2;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: serif;
+        }
+        .temoignage-text {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            line-height: 1.8;
+        }
+        .temoignage-author {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        .temoignage-company {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        .stars {
+            color: #ffc107;
+            margin-bottom: 15px;
+        }
+
+        /* --- FLOATING BUTTONS --- */
+        .floating-actions {
+            position: fixed; bottom: 25px; right: 25px;
+            display: flex; flex-direction: column; gap: 12px; z-index: 999;
+        }
+        .float-btn {
+            width: 55px; height: 55px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 1.5rem; text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+            transition: var(--transition);
+            animation: pulse 2.5s infinite;
+        }
+        .float-btn:hover { transform: scale(1.1); animation: none; }
+        .whatsapp { background: #25D366; }
+        .telegram { background: #0088cc; }
+        .devis-rapide { background: var(--accent-color); animation: none; }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+            50% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        }
+
+        footer {
+            background: #081f33; color: rgba(255,255,255,0.7);
+            text-align: center; padding: 30px 20px; font-size: 0.9rem;
+        }
+        footer strong { color: var(--white); }
+        footer a { color: var(--secondary-color); }
+        .footer-links {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            transition: var(--transition);
+        }
+        .footer-links a:hover { color: var(--accent-color); }
+
+        /* --- ANIMATIONS --- */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.7s ease; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 2.6rem; }
+            .contact-container { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .navbar { padding: 1rem 20px; }
+            .logo { font-size: 1.2rem; }
+            .nav-links {
+                position: fixed; right: 0; top: 0; height: 100vh;
+                background: var(--white); flex-direction: column;
+                align-items: center; justify-content: center;
+                width: 75%; transform: translateX(100%);
+                transition: transform 0.35s ease-in;
+                box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+                z-index: 999;
+            }
+            .nav-links.active { transform: translateX(0); }
+            .burger { display: block; z-index: 1000; }
+            .hero h1 { font-size: 2rem; }
+            .hero-subtitle { font-size: 1.1rem; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .btn-hero { width: 100%; max-width: 280px; text-align: center; }
+            section { padding: 60px 5%; }
+            .floating-actions { bottom: 20px; right: 20px; }
+            .float-btn { width: 50px; height: 50px; font-size: 1.3rem; }
+            .map-wrapper iframe { height: 350px; }
+            .stats-bar { margin-top: 0; border-radius: 0; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.8rem; }
+            .section-header h2 { font-size: 1.9rem; }
+            .service-card { padding: 30px 25px; }
+            .contact-form { padding: 25px 20px; }
+            .stat-number { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <i class="fas fa-flask"></i>
+                <div class="logo-text">
+                    <span>LABORATOIRE SAIDI</span>
+                    <small>Contrôle Qualité & Ingénierie</small>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="btn-contact">Contactez-nous</a></li>
+            </ul>
+            <div class="burger"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">🏗️ Expertise & Conformité</span>
+            <h1>Laboratoire de Contrôle Qualité & Bureau d'Ingénierie</h1>
+            <p class="hero-subtitle">Béton • Sol • Route • Structures</p>
+            <p class="hero-description">
+                Spécialiste du contrôle qualité et conformité des matériaux, 
+                et bureau d'ingénierie multi-disciplinaire agréé à Akbou, Béjaïa.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-hero btn-primary">Demander un Devis Gratuit</a>
+                <a href="#services" class="btn-hero btn-outline">Nos Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="container" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+        <div class="stats-bar reveal">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Projets Réalisés</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-label">Années d'Expérience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">% Conformité</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-label">Partenaires</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="section-header reveal">
+            <h2>Nos Domaines d'Expertise</h2>
+            <div class="line"></div>
+            <p>Une offre complète allant du contrôle des matériaux à l'expertise judiciaire</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-vial"></i></div>
+                <h3>🔬 Laboratoire de Contrôle</h3>
+                <p>Contrôle qualité et conformité des matériaux de construction.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Essais sur béton (compression, traction)</li>
+                    <li><i class="fas fa-check-circle"></i> Analyse des granulats et ciment</li>
+                    <li><i class="fas fa-check-circle"></i> Contrôle des matériaux routiers</li>
+                    <li><i class="fas fa-check-circle"></i> Suivi de formulation béton</li>
+                </ul>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-mountain"></i></div>
+                <h3>⛰️ Géotechnique & Sols</h3>
+                <p>Études géotechniques pour la stabilité de vos ouvrages.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Reconnaissance des sols (G1, G2, G5)</li>
+                    <li><i class="fas fa-check-circle"></i> Essais in-situ et en laboratoire</li>
+                    <li><i class="fas fa-check-circle"></i> Études de stabilité des pentes</li>
+                    <li><i class="fas fa-check-circle"></i> Fondations spéciales</li>
+                </ul>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-building"></i></div>
+                <h3>🏗️ Génie Civil & Structures</h3>
+                <p>Conception et vérification de structures complexes.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Béton armé et précontraint</li>
+                    <li><i class="fas fa-check-circle"></i> Charpente métallique</li>
+                    <li><i class="fas fa-check-circle"></i> Calcul de structures</li>
+                    <li><i class="fas fa-check-circle"></i> Viabilisation de terrains</li>
+                </ul>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-satellite"></i></div>
+                <h3>📐 Topographie</h3>
+                <p>Précision et rigueur pour vos implantations.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Relevés topographiques</li>
+                    <li><i class="fas fa-check-circle"></i> Implantation et bornage</li>
+                    <li><i class="fas fa-check-circle"></i> Études de faisabilité</li>
+                    <li><i class="fas fa-check-circle"></i> Nivellement</li>
+                </ul>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-gavel"></i></div>
+                <h3>⚖️ Expertise & Assistance</h3>
+                <p>Conseil technique et juridique pour maîtres d'ouvrage.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Expertise et contre-expertise</li>
+                    <li><i class="fas fa-check-circle"></i> Assistance technique (AMO)</li>
+                    <li><i class="fas fa-check-circle"></i> Organisation de chantiers</li>
+                    <li><i class="fas fa-check-circle"></i> Conseil aux entreprises</li>
+                </ul>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+                <h3>📋 Suivi & Diagnostics</h3>
+                <p>Surveillance rigoureuse de l'exécution des travaux.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Suivi de chantier</li>
+                    <li><i class="fas fa-check-circle"></i> Diagnostics techniques</li>
+                    <li><i class="fas fa-check-circle"></i> Réception des ouvrages</li>
+                    <li><i class="fas fa-check-circle"></i> Rapports techniques</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS SECTION -->
+    <section id="projets" class="projets-section">
+        <div class="section-header reveal">
+            <h2>Nos Projets Réalisés</h2>
+            <div class="line"></div>
+            <p>Découvrez quelques-uns de nos récents projets en ingénierie et contrôle qualité</p>
+        </div>
+
+        <div class="projets-grid">
+            <div class="projet-card reveal">
+                <div class="projet-image">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="projet-content">
+                    <h3>Immeuble R+5 - Akbou</h3>
+                    <p>Contrôle qualité complet du béton et suivi de chantier pour un immeuble résidentiel.</p>
+                    <div class="projet-tags">
+                        <span class="tag">Béton</span>
+                        <span class="tag">Suivi</span>
+                        <span class="tag">2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet-card reveal">
+                <div class="projet-image">
+                    <i class="fas fa-road"></i>
+                </div>
+                <div class="projet-content">
+                    <h3>Route Wilayale - Béjaïa</h3>
+                    <p>Étude géotechnique et contrôle des matériaux pour la réhabilitation routière.</p>
+                    <div class="projet-tags">
+                        <span class="tag">Route</span>
+                        <span class="tag">Géotechnique</span>
+                        <span class="tag">2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet-card reveal">
+                <div class="projet-image">
+                    <i class="fas fa-warehouse"></i>
+                </div>
+                <div class="projet-content">
+                    <h3>Complexe Industriel</h3>
+                    <p>Étude de sol et fondations spéciales pour un complexe industriel de 5000m².</p>
+                    <div class="projet-tags">
+                        <span class="tag">Industriel</span>
+                        <span class="tag">Fondations</span>
+                        <span class="tag">2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accreditations Section -->
+    <section id="accreditations" class="accreditations">
+        <div class="section-header reveal">
+            <h2>Nos Agréments Officiels</h2>
+            <div class="line"></div>
+            <p style="color: rgba(255,255,255,0.9); margin-top: 15px;">Garantie de compétence et de conformité légale</p>
+        </div>
+        <div class="acc-grid reveal">
+            <div class="acc-item">
+                <i class="fas fa-landmark"></i>
+                <h4>Ministère de l'Habitat</h4>
+                <p>Organisme de bâtiment agréé</p>
+            </div>
+            <div class="acc-item">
+                <i class="fas fa-balance-scale"></i>
+                <h4>Expert Judiciaire</h4>
+                <p>Agréé par les Cours et Tribunaux</p>
+            </div>
+            <div class="acc-item">
+                <i class="fas fa-file-shield"></i>
+                <h4>Expert Assurance</h4>
+                <p>Agréé par l'UAR</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="faq-section">
+        <div class="section-header reveal">
+            <h2>Questions Fréquentes</h2>
+            <div class="line"></div>
+            <p>Trouvez rapidement les réponses aux questions les plus courantes</p>
+        </div>
+        
+        <div class="faq-container reveal">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Quels sont les délais pour obtenir un rapport d'essai béton ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Les rapports d'essais de compression sur éprouvettes béton sont généralement disponibles sous 7 jours pour les résultats préliminaires et 28 jours pour les résultats définitifs (âge du béton). Pour les essais rapides, nous proposons des résultats sous 24-48h.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Quelle est la durée de validité d'une étude de sol ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Une étude géotechnique est valable en moyenne 5 à 10 ans, selon l'évolution du site et les conditions environnementales. Cependant, nous recommandons de mettre à jour l'étude si le projet change significativement ou si plus de 5 ans se sont écoulés.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Intervenez-vous sur toute la wilaya de Béjaïa et au-delà ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Oui, notre laboratoire intervient sur toute la wilaya de Béjaïa (Akbou, Béjaïa ville, Amizour, Tazmalt, etc.) ainsi que dans les wilayas voisines (Sétif, Bouira, Tizi Ouzou). Nous nous déplaçons sur site pour les prélèvements et les essais in-situ.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Quels documents fournir pour une demande d'expertise judiciaire ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Pour une expertise judiciaire, veuillez nous fournir : la décision de justice vous désignant comme expert, les plans du projet, le CCTP, les rapports techniques existants, et tout document relatif au litige. Nous vous accompagnons dans toutes les étapes de l'expertise.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Proposez-vous des devis gratuits ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Oui, tous nos devis sont gratuits et sans engagement. Contactez-nous par téléphone, email ou WhatsApp avec les détails de votre projet (type d'ouvrage, surface, localisation), et nous vous établissons un devis détaillé sous 24 à 48h.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Comment se déroule un contrôle qualité sur chantier ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Notre technicien se déplace sur votre chantier pour effectuer les prélèvements (béton frais, sols, etc.). Les échantillons sont ensuite analysés dans notre laboratoire accrédité. Un rapport détaillé vous est remis avec les résultats conformes ou non aux normes en vigueur.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR CODE SECTION -->
+    <section class="qr-section">
+        <div class="section-header">
+            <h2><i class="fas fa-qrcode"></i> Accédez Rapidement à Nos Services</h2>
+            <div class="line"></div>
+            <p>Scannez les QR codes pour nous contacter ou accéder à nos services</p>
+        </div>
+
+        <div class="qr-grid">
+            <div class="qr-card">
+                <h4><i class="fas fa-address-card"></i> Carte de Visite Digitale</h4>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=BEGIN:VCARD%0AVERSION:3.0%0AFN:Laboratoire%20Saidi%0AORG:Laboratoire%20de%20Contr%C3%B4le%20Qualit%C3%A9%0ATEL;TYPE=WORK,VOICE:034338099%0ATEL;TYPE=CELL:00213774701010%0AEMAIL:bet.saidi.engineering@gmail.com%0AADR;TYPE=WORK:;;Cit%C3%A9%20RHP%20130/200%20Local%20E17;Akbou;B%C3%A9ja%C3%AFa;06000;Alg%C3%A9rie%0AURL:https://www.facebook.com/LaboratoireSaidi%0AEND:VCARD" alt="QR Code vCard">
+                <p>Enregistrez nos coordonnées directement dans votre téléphone</p>
+            </div>
+
+            <div class="qr-card">
+                <h4><i class="fab fa-whatsapp"></i> Contact WhatsApp</h4>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/213774701010?text=Bonjour%20Laboratoire%20Saidi,%20je%20souhaite%20obtenir%20un%20devis" alt="QR Code WhatsApp">
+                <p>Discutez directement avec nous sur WhatsApp</p>
+            </div>
+
+            <div class="qr-card">
+                <h4><i class="fas fa-map-marker-alt"></i> Nous Localiser</h4>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.google.com/maps/place/36.459399,4.538716" alt="QR Code Localisation">
+                <p>Scannez pour obtenir l'itinéraire GPS<br>36.459399, 4.538716</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEMOIGNAGES SECTION -->
+    <section class="temoignages-section">
+        <div class="section-header reveal">
+            <h2>Ce Que Disent Nos Clients</h2>
+            <div class="line"></div>
+            <p>La satisfaction de nos clients est notre meilleure récompense</p>
+        </div>
+
+        <div class="temoignages-grid">
+            <div class="temoignage-card reveal">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="temoignage-text">
+                    "Professionnalisme et réactivité exemplaires. Les rapports sont toujours conformes et détaillés. Je recommande vivement le Laboratoire Saidi pour tous vos besoins en contrôle qualité."
+                </p>
+                <div class="temoignage-author">M. Daoud. H</div>
+                <div class="temoignage-company">Entreprise BTP - Akbou</div>
+            </div>
+
+            <div class="temoignage-card reveal">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="temoignage-text">
+                    "Une équipe compétente et à l'écoute. L'étude géotechnique a été réalisée dans les délais et nous a permis d'optimiser nos fondations. Excellent rapport qualité-prix."
+                </p>
+                <div class="temoignage-author">Mr Mohand. H</div>
+                <div class="temoignage-company">Promoteur Immobilier - Béjaïa</div>
+            </div>
+
+            <div class="temoignage-card reveal">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="temoignage-text">
+                    "Expertise judiciaire réalisée avec sérieux et objectivité. Le rapport était clair et a été apprécié par le tribunal. Je fais appel à eux régulièrement."
+                </p>
+                <div class="temoignage-author">Maître Salim. M</div>
+                <div class="temoignage-company">Avocat - Cour de Béjaïa</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header reveal">
+            <h2>Contactez-nous</h2>
+            <div class="line"></div>
+            <p>Pour toute demande de devis ou d'information, notre équipe vous répond sous 24h</p>
+        </div>
+        
+        <div class="contact-container reveal">
+            <div class="contact-info">
+                <h3>📍 Nos Coordonnées</h3>
+                
+                <div class="address-box">
+                    <strong><i class="fas fa-map-marker-alt"></i> Adresse</strong>
+                    <span>Cité RHP 130/200, Local E17<br>
+                    Akbou, Wilaya de Béjaïa<br>
+                    <em>(Derrière la CASNOS)</em></span>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="text">
+                        <strong>Email</strong>
+                        <a href="mailto:bet.saidi.engineering@gmail.com">bet.saidi.engineering@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="text">
+                        <strong>Téléphone / Fax</strong>
+                        <span>034 33 80 99</span>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <div class="text">
+                        <strong>Mobile / WhatsApp / Telegram</strong>
+                        <span>00213 774 70 10 10</span>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="text">
+                        <strong>Horaires d'ouverture</strong>
+                        <span>Dimanche - Jeudi : 08h00 - 17h00<br>Vendredi - Samedi : Fermé</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/LaboratoireSaidi" target="_blank" class="social-btn fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:bet.saidi.engineering@gmail.com" class="social-btn email" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/213774701010" target="_blank" class="social-btn wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://t.me/+213774701010" target="_blank" class="social-btn tg" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+            
+            <!-- FORMULAIRE DE CONTACT FONCTIONNEL -->
+            <div class="contact-form">
+                <h3><i class="fas fa-paper-plane"></i> Envoyez-nous votre demande</h3>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">Nom complet <span class="required">*</span></label>
+                            <input type="text" id="nom" name="nom" class="form-control" required placeholder="Votre nom et prénom">
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Téléphone <span class="required">*</span></label>
+                            <input type="tel" id="telephone" name="telephone" class="form-control" required placeholder="05/06/07...">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="votre@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sujet">Sujet <span class="required">*</span></label>
+                        <select id="sujet" name="sujet" class="form-control" required>
+                            <option value="">Sélectionnez un sujet...</option>
+                            <option value="devis-controle-beton">Devis - Contrôle qualité béton</option>
+                            <option value="devis-etude-sol">Devis - Étude de sol / Géotechnique</option>
+                            <option value="devis-topographie">Devis - Topographie</option>
+                            <option value="expertise">Expertise / Diagnostic</option>
+                            <option value="contre-expertise">Contre-expertise</option>
+                            <option value="suivi-chantier">Suivi de chantier</option>
+                            <option value="autre">Autre demande</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Votre message <span class="required">*</span></label>
+                        <textarea id="message" name="message" class="form-control" required placeholder="Décrivez votre projet, la localisation, les délais souhaités..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Envoyer ma demande
+                    </button>
+                    
+                    <p style="margin-top: 15px; font-size: 0.85rem; color: var(--text-light); text-align: center;">
+                        <i class="fas fa-info-circle"></i> Ou envoyez directement un email à 
+                        <a href="mailto:bet.saidi.engineering@gmail.com" style="color: var(--secondary-color); font-weight: 600;">bet.saidi.engineering@gmail.com</a>
+                    </p>
+                </form>
+            </div>
+
+            <!-- CARTE GOOGLE MAPS AVEC COORDONNÉES GPS EXACTES -->
+            <div class="map-container reveal">
+                <h3><i class="fas fa-map-marked-alt"></i> Notre Localisation</h3>
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps?q=36.459399,4.538716&z=17&output=embed" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="Localisation Laboratoire Saidi - Akbou">
+                    </iframe>
+                </div>
+                <div class="map-info">
+                    <p>
+                        <i class="fas fa-navigation" style="color: var(--accent-color);"></i>
+                        <strong>Coordonnées GPS :</strong> 36.459399°N, 4.538716°E<br>
+                        <small>Cité RHP 130/200, Local E17, Akbou (Derrière CASNOS)</small><br>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=36.459399,4.538716" target="_blank" style="display: inline-block; margin-top: 10px;">
+                            <i class="fas fa-directions"></i> Obtenir l'itinéraire GPS <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#home">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#projets">Projets</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>
+            &copy; <strong>Laboratoire Saidi</strong> - Akbou, Béjaïa, Algérie<br>
+            <small>Laboratoire de contrôle qualité et conformité des matériaux (Béton, Sol, Route) & Bureau d'ingénierie multi-disciplinaire</small><br>
+            <small>Email: <a href="mailto:bet.saidi.engineering@gmail.com">bet.saidi.engineering@gmail.com</a> | Tél: 034 33 80 99 | Mobile: 00213 774 70 10 10</small><br>
+            <small><i class="fas fa-map-marker-alt"></i> Cité RHP 130/200, Local E17, Akbou (Derrière CASNOS) - GPS: 36.459399, 4.538716</small>
+        </p>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="floating-actions">
+        <a href="#contact" class="float-btn devis-rapide" title="Demande de devis rapide">
+            <i class="fas fa-file-invoice-dollar"></i>
+        </a>
+        <a href="https://t.me/+213774701010" class="float-btn telegram" title="Contactez-nous sur Telegram">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://wa.me/213774701010?text=Bonjour%20Laboratoire%20Saidi,%20je%20souhaite%20obtenir%20un%20devis" class="float-btn whatsapp" title="Contactez-nous sur WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Menu Burger Mobile
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            const icon = burger.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                burger.querySelector('i').classList.remove('fa-times');
+                burger.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // FAQ ACCORDION
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                item.classList.toggle('active');
+            });
+        });
+
+        // Animation au scroll (Reveal)
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            const windowHeight = window.innerHeight;
+
+            reveals.forEach(element => {
+                const revealTop = element.getBoundingClientRect().top;
+                const revealPoint = 120;
+
+                if (revealTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        window.addEventListener('load', reveal);
+
+        // STATS COUNTER ANIMATION
+        const statsSection = document.querySelector('.stats-bar');
+        const statNumbers = document.querySelectorAll('.stat-number');
+        let started = false;
+
+        function startCount(el) {
+            const target = +el.getAttribute('data-target');
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            
+            let current = 0;
+            const updateCount = () => {
+                current += increment;
+                if (current < target) {
+                    el.innerText = Math.ceil(current);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    el.innerText = target + (target === 100 ? '%' : '+');
+                }
+            };
+            updateCount();
+        }
+
+        const observerOptions = { threshold: 0.5 };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !started) {
+                    statNumbers.forEach(stat => startCount(stat));
+                    started = true;
+                }
+            });
+        }, observerOptions);
+
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        // Gestion du formulaire
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nom = document.getElementById('nom').value;
+            const telephone = document.getElementById('telephone').value;
+            const email = document.getElementById('email').value;
+            const sujet = document.getElementById('sujet').value;
+            const message = document.getElementById('message').value;
+            
+            const subject = `Demande de devis - ${sujet}`;
+            const body = `Nom: ${nom}%0D%0ATéléphone: ${telephone}%0D%0AEmail: ${email}%0D%0ASujet: ${sujet}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+            
+            window.location.href = `mailto:bet.saidi.engineering@gmail.com?subject=${subject}&body=${body}`;
+            
+            alert('Merci pour votre demande ! Votre client email va s\'ouvrir.');
+            
+            this.reset();
+        });
+
+        // Smooth scroll pour les ancres
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Effet header au scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.style.boxShadow = window.scrollY > 50 ? '0 4px 20px rgba(0,0,0,0.1)' : '0 2px 15px rgba(0,0,0,0.08)';
+        });
+
+        // PWA Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Service Worker enregistré!', reg))
+                    .catch(err => console.log('Erreur Service Worker:', err));
+            });
+        }
+    </script>
+
+</body>
+</html>

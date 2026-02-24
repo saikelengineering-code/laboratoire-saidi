@@ -512,6 +512,25 @@
         }
         .btn-submit i { margin-right: 8px; }
 
+        /* Alert messages (ajoutés) */
+        .alert {
+            padding: 1rem 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+            display: none;
+            font-weight: 500;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
         /* Carte Google Maps */
         .map-container {
             grid-column: 1 / -1;
@@ -554,51 +573,7 @@
         }
         .map-info a:hover { text-decoration: underline; }
 
-        /* --- TEMOIGNAGES --- */
-        .temoignages-section { background: var(--light-bg); }
-        .temoignages-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .temoignage-card {
-            background: var(--white);
-            padding: 35px;
-            border-radius: 15px;
-            box-shadow: var(--shadow);
-            position: relative;
-        }
-        .temoignage-card::before {
-            content: '"';
-            font-size: 5rem;
-            color: var(--accent-color);
-            opacity: 0.2;
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            font-family: serif;
-        }
-        .temoignage-text {
-            font-style: italic;
-            color: var(--text-light);
-            margin-bottom: 20px;
-            position: relative;
-            z-index: 1;
-            line-height: 1.8;
-        }
-        .temoignage-author {
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 5px;
-        }
-        .temoignage-company {
-            font-size: 0.9rem;
-            color: var(--text-light);
-        }
-        .stars {
-            color: #ffc107;
-            margin-bottom: 15px;
-        }
+        /* --- TEMOIGNAGES SECTION SUPPRIMÉE --- */
 
         /* --- FLOATING BUTTONS --- */
         .floating-actions {
@@ -1020,62 +995,6 @@
         </div>
     </section>
 
-    <!-- TEMOIGNAGES SECTION -->
-    <section class="temoignages-section">
-        <div class="section-header reveal">
-            <h2>Ce Que Disent Nos Clients</h2>
-            <div class="line"></div>
-            <p>La satisfaction de nos clients est notre meilleure récompense</p>
-        </div>
-
-        <div class="temoignages-grid">
-            <div class="temoignage-card reveal">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="temoignage-text">
-                    "Professionnalisme et réactivité exemplaires. Les rapports sont toujours conformes et détaillés. Je recommande vivement le Laboratoire Saidi pour tous vos besoins en contrôle qualité."
-                </p>
-                <div class="temoignage-author">M. Daoud. H</div>
-                <div class="temoignage-company">Entreprise BTP - Akbou</div>
-            </div>
-
-            <div class="temoignage-card reveal">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="temoignage-text">
-                    "Une équipe compétente et à l'écoute. L'étude géotechnique a été réalisée dans les délais et nous a permis d'optimiser nos fondations. Excellent rapport qualité-prix."
-                </p>
-                <div class="temoignage-author">Mr yacine. B</div>
-                <div class="temoignage-company">Architecte</div>
-            </div>
-
-            <div class="temoignage-card reveal">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <p class="temoignage-text">
-                    "J'ai fait appel au Laboratoire et Bureau d'injénierie Saidi pour l'étude de structure de mon projet de promotion immobilière en R+10. L'étude a été réalisée dans les délais impartis et le suivi des travaux ainsi que le contrôle des matériaux ont été effectués dans les règles de l'art. Je suis entièrement satisfait de leur professionnalisme et de leur expertise technique."
-                </p>
-                <div class="temoignage-author">Mr Mohand. H</div>
-                <div class="temoignage-company">Promoteur Immobilier - Béjaïa </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="section-header reveal">
@@ -1135,10 +1054,23 @@
                 </div>
             </div>
             
-            <!-- FORMULAIRE DE CONTACT FONCTIONNEL -->
+            <!-- FORMULAIRE DE CONTACT AVEC FORMSUBMIT -->
             <div class="contact-form">
                 <h3><i class="fas fa-paper-plane"></i> Envoyez-nous votre demande</h3>
-                <form id="contactForm">
+                
+                <!-- Alertes pour feedback (optionnel) -->
+                <div id="alertSuccess" class="alert alert-success"></div>
+                <div id="alertError" class="alert alert-error"></div>
+                
+                <form id="contactForm" action="https://formsubmit.co/bet.saidi.engineering@gmail.com" method="POST">
+                    <!-- Configuration FormSubmit -->
+                    <input type="hidden" name="_subject" value="Nouvelle demande de contact - Laboratoire Saidi">
+                    <input type="hidden" name="_cc" value="bet.saidi.engineering@gmail.com">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://formsubmit.co/el/thanks">
+                    <input type="hidden" name="_autoresponse" value="Merci pour votre demande ! Notre équipe vous répondra sous 24h.">
+                    
                     <div class="form-row">
                         <div class="form-group">
                             <label for="nom">Nom complet <span class="required">*</span></label>
@@ -1174,7 +1106,7 @@
                         <textarea id="message" name="message" class="form-control" required placeholder="Décrivez votre projet, la localisation, les délais souhaités..."></textarea>
                     </div>
                     
-                    <button type="submit" class="btn-submit">
+                    <button type="submit" class="btn-submit" id="submitBtn">
                         <i class="fas fa-paper-plane"></i> Envoyer ma demande
                     </button>
                     
@@ -1337,24 +1269,23 @@
             observer.observe(statsSection);
         }
 
-        // Gestion du formulaire
+        // Gestion du formulaire avec FormSubmit (feedback visuel)
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const nom = document.getElementById('nom').value;
-            const telephone = document.getElementById('telephone').value;
-            const email = document.getElementById('email').value;
-            const sujet = document.getElementById('sujet').value;
-            const message = document.getElementById('message').value;
-            
-            const subject = `Demande de devis - ${sujet}`;
-            const body = `Nom: ${nom}%0D%0ATéléphone: ${telephone}%0D%0AEmail: ${email}%0D%0ASujet: ${sujet}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-            
-            window.location.href = `mailto:bet.saidi.engineering@gmail.com?subject=${subject}&body=${body}`;
-            
-            alert('Merci pour votre demande ! Votre client email va s\'ouvrir.');
-            
-            this.reset();
+            const btn = document.getElementById('submitBtn');
+            const alertSuccess = document.getElementById('alertSuccess');
+            const alertError = document.getElementById('alertError');
+            const originalText = btn.innerHTML;
+
+            // Afficher le bouton de chargement
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+
+            // Cacher les alertes précédentes
+            if (alertSuccess) alertSuccess.style.display = 'none';
+            if (alertError) alertError.style.display = 'none';
+
+            // On ne bloque pas la soumission (pas de preventDefault)
+            // Le formulaire est envoyé à FormSubmit, qui redirigera vers _next
         });
 
         // Smooth scroll pour les ancres
@@ -1386,7 +1317,3 @@
 
 </body>
 </html>
-
-
-
-

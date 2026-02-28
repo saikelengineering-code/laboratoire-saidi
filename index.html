@@ -485,8 +485,16 @@
             .form-row { grid-template-columns: 1fr; }
         }
         @media (max-width: 768px) {
-            .navbar { padding: 1rem 20px; }
-            .logo { font-size: 1.2rem; }
+            .navbar { padding: 1rem 15px; }
+            
+            /* Ajustements du logo ovale pour tablettes/mobiles */
+            .logo { gap: 10px; }
+            .logo img { 
+                width: 120px !important; 
+                height: 60px !important; 
+            }
+            .logo-text span { font-size: 1rem; }
+            
             .nav-links {
                 position: fixed; right: 0; top: 0; height: 100vh;
                 background: var(--white); flex-direction: column;
@@ -512,6 +520,15 @@
             .stats-bar { margin-top: 0; border-radius: 0; }
         }
         @media (max-width: 480px) {
+            /* Ajustements ultimes pour les petits smartphones */
+            .logo img { 
+                width: 90px !important; 
+                height: 45px !important; 
+            }
+            .logo-text span { font-size: 0.9rem; }
+            /* On masque le petit texte "Béton-Sol-Bitume" en haut pour laisser la place au bouton Menu */
+            .logo-text small { display: none; } 
+            
             .hero h1 { font-size: 1.8rem; }
             .section-header h2 { font-size: 1.9rem; }
             .service-card { padding: 30px 25px; }

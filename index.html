@@ -76,9 +76,38 @@
             display: flex; justify-content: space-between; align-items: center;
             padding: 1rem 5%; max-width: 1400px; margin: 0 auto;
         }
+
         .logo {
-            font-size: 1.4rem; font-weight: 800; color: var(--primary-color);
-            display: flex; align-items: center; gap: 10px;
+            display: flex; 
+            align-items: center; 
+            gap: 15px;
+            flex-shrink: 0; /* Empêche tout le bloc logo de rétrécir */
+            text-decoration: none;
+        }
+
+        .logo img {
+    /* On garde la taille du cercle à 70px (ou 60px selon votre choix) */
+    width: 180px !important;
+    height: 90px !important;
+    border-radius: 28% !important;
+    
+    /* 1. EMPECHE DE COUPER LES BORDS : l'image s'adapte au cercle */
+    object-fit: contain !important; 
+    
+    /* 2. DIMINUE LA PHOTO : plus le padding est grand, plus la photo est petite */
+    padding: 8px !important; 
+    
+    /* On assure un fond blanc et une bordure propre */
+    background-color: white !important;
+    border: 2px solid white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+        .logo-text { 
+            display: flex; 
+            flex-direction: column; 
+            line-height: 1.1;
+            white-space: nowrap; /* EMPÊCHE LE TEXTE DE S'ÉCRASER */
         }
         .logo i { color: var(--accent-color); font-size: 1.8rem; }
         .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
@@ -494,25 +523,31 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="#" class="logo">
-                <i class="fas fa-flask"></i>
-                <div class="logo-text">
-                    <span data-i18n="logo_labo">LABORATOIRE SAIDI</span>
-                    <small data-i18n="logo_sub">Contrôle Qualité & Ingénierie</small>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home" data-i18n="nav_home">Accueil</a></li>
-                <li><a href="#services" data-i18n="nav_services">Services</a></li>
-                <li><a href="#contact" class="btn-contact" data-i18n="nav_contact">Contactez-nous</a></li>
-                <li class="lang-switcher">
-                    <button class="lang-btn active" data-lang="fr">FR</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="ar">عربي</button>
-                </li>
-            </ul>
-            <div class="burger"><i class="fas fa-bars"></i></div>
-        </nav>
+    <a href="#" class="logo">
+        <img src="data:image/jpeg;base64,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" alt="Logo Laboratoire Saidi">
+            <div class="logo-text">
+            <span>LABORATOIRE SAIDI</span>
+            <small data-i18n="logo_subtitle">Béton - Sol - Bitume</small>
+        </div>
+    </a>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#accueil" data-i18n="nav_home">Accueil</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#expertises" data-i18n="nav_expertises">Expertises</a>
+        <a href="#contact" data-i18n="nav_contact" class="btn-contact">Contact</a>
+        
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="ar">عربي</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </div>
+
+    <div class="burger" id="burger">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
     </header>
 
     <!-- Hero Section -->
@@ -523,7 +558,7 @@
             <p class="hero-subtitle" data-i18n="hero_subtitle">Béton • Sol • Route • Structures</p>
             <p class="hero-description" data-i18n="hero_desc">
                 Spécialiste du contrôle qualité et conformité des matériaux, 
-                et bureau d'ingénierie multi-disciplinaire agréé situé à Akbou, Béjaïa.
+                et bureau d'ingénierie et d'expertise  agréé situé à Akbou, Béjaïa.
             </p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn-hero btn-primary" data-i18n="hero_btn1">Demander un Devis Gratuit</a>
@@ -536,10 +571,10 @@
     <div class="container" style="max-width:1400px; margin:0 auto; padding:0 20px;">
         <div class="stats-bar reveal">
             <div class="stats-grid">
-                <div class="stat-item"><span class="stat-number" data-target="100">0</span><span class="stat-label" data-i18n="stat1">% Projets Réalisés</span></div>
+                <div class="stat-item"><span class="stat-number" data-target="90">0</span><span class="stat-label" data-i18n="stat1">% Projets Réalisés</span></div>
                 <div class="stat-item"><span class="stat-number" data-target="13">0</span><span class="stat-label" data-i18n="stat2">Années d'Expérience</span></div>
                 <div class="stat-item"><span class="stat-number" data-target="100">0</span><span class="stat-label" data-i18n="stat3">% Conformité</span></div>
-                <div class="stat-item"><span class="stat-number" data-target="100">0</span><span class="stat-label" data-i18n="stat4">Clients Satisfaits</span></div>
+                <div class="stat-item"><span class="stat-number" data-target="85">0</span><span class="stat-label" data-i18n="stat4">Clients Satisfaits</span></div>
             </div>
         </div>
     </div>
@@ -637,9 +672,9 @@
             <p data-i18n="acc_subtitle">Garantie de compétence et de conformité légale</p>
         </div>
         <div class="acc-grid reveal">
-            <div class="acc-item"><i class="fas fa-landmark"></i><h4 data-i18n="acc1_title">Ministère de l'Habitat</h4><p data-i18n="acc1_desc">Organisme de bâtiment agréé</p></div>
+            <div class="acc-item"><i class="fas fa-landmark"></i><h4 data-i18n="acc1_title">Expert en Génie civil</h4><p data-i18n="acc1_desc">Agréé par le M.H.U.V </p></div>
             <div class="acc-item"><i class="fas fa-balance-scale"></i><h4 data-i18n="acc2_title">Expert Judiciaire</h4><p data-i18n="acc2_desc">Agréé par les Cours et Tribunaux</p></div>
-            <div class="acc-item"><i class="fas fa-file-shield"></i><h4 data-i18n="acc3_title">Expert Assurance</h4><p data-i18n="acc3_desc">Agréé par l'UAR</p></div>
+            <div class="acc-item"><i class="fas fa-file-shield"></i><h4 data-i18n="acc3_title">Expert en Assurance</h4><p data-i18n="acc3_desc">Agréé par l'U.A.R </p></div>
         </div>
     </section>
 
@@ -696,7 +731,7 @@
             </div>
             <!-- Formulaire -->
             <div class="contact-form">
-                <h3 data-i18n="form_title"><i class="fas fa-paper-plane"></i> Envoyez-nous votre demande</h3>
+                <h3 data-i18n="form_title"><i class="fas fa-paper-plane"></i> Envoyez-nous votre demande ou CV </h3>
                 <div id="alertSuccess" class="alert alert-success"></div>
                 <div id="alertError" class="alert alert-error"></div>
                 <form id="contactForm" action="https://formsubmit.co/bet.saidi.engineering@gmail.com" method="POST">
@@ -715,11 +750,11 @@
                         <label for="sujet" data-i18n="form_subject">Sujet <span class="required">*</span></label>
                         <select id="sujet" name="sujet" class="form-control" required>
                             <option value="" data-i18n="form_subject_placeholder">Sélectionnez un sujet...</option>
-                            <option value="devis-controle-beton" data-i18n="form_subject1">Devis - Contrôle qualité béton</option>
+                            <option value="devis-controle-beton" data-i18n="form_subject1">Devis - Contrôle qualité béton-Sol-Route </option>
                             <option value="devis-etude-sol" data-i18n="form_subject2">Devis - Étude de sol / Géotechnique</option>
                             <option value="devis-topographie" data-i18n="form_subject3">Devis - Topographie</option>
                             <option value="expertise" data-i18n="form_subject4">Expertise / Diagnostic</option>
-                            <option value="contre-expertise" data-i18n="form_subject5">Contre-expertise</option>
+                            <option value="contre-expertise" data-i18n="form_subject5">Expertise et Contre-expertise</option>
                             <option value="suivi-chantier" data-i18n="form_subject6">Suivi de chantier</option>
                             <option value="autre" data-i18n="form_subject7">Autre demande</option>
                         </select>
@@ -753,7 +788,7 @@
         </div>
         <p style="color:rgba(255,255,255,0.5); font-size:0.8rem; margin-top:-10px;" data-i18n="brochure_note">(Ouvre une version imprimable de la brochure dans une nouvelle fenêtre)</p>
         <p>&copy; <strong data-i18n="footer_copyright">Laboratoire Saidi</strong> - <span data-i18n="footer_location">Akbou, Béjaïa, Algérie</span><br>
-        <small data-i18n="footer_desc">Laboratoire de contrôle qualité et conformité des matériaux (Béton, Sol, Route) & Bureau d'ingénierie multi-disciplinaire</small><br>
+        <small data-i18n="footer_desc">Laboratoire de contrôle qualité et conformité des matériaux (Béton, Sol, Route) & Bureau d'ingénierie et d'expertise </small><br>
         <small>Email: <a href="mailto:bet.saidi.engineering@gmail.com">bet.saidi.engineering@gmail.com</a> | Tél: <span dir="ltr" style="display: inline-block;">034 33 80 99</span> | Mobile: <span dir="ltr" style="display: inline-block;">00213 774 70 10 10</span></small><br>
         <small><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_address">Cité RHP 130/200, Local E17, Akbou (Derrière CASNOS) - GPS: 36.459399, 4.538716</span></small></p>
     </footer>
@@ -784,7 +819,7 @@
                 hero_badge: "🏗️ Expertise & Conformité",
                 hero_title: "Laboratoire de Contrôle Qualité & Bureau d'Ingénierie",
                 hero_subtitle: "Béton • Sol • Route • Structures",
-                hero_desc: "Spécialiste du contrôle qualité et conformité des matériaux, et bureau d'ingénierie multi-disciplinaire & d'expertise agréé situé à Akbou, Béjaïa.",
+                hero_desc: "Spécialiste du contrôle qualité et conformité des matériaux, et bureau d'ingénierie & d'expertise agréé situé à Akbou, Béjaïa.",
                 hero_btn1: "Demander un Devis Gratuit",
                 hero_btn2: "Nos Services",
                 stat1: "% Projets Réalisés",
@@ -796,7 +831,7 @@
                 service1_title: "🔬 Laboratoire de Contrôle",
                 service1_desc: "Contrôle qualité et conformité des matériaux de construction.",
                 service1_li1: "Essais sur béton (compression, carottage, Ultrason,scanner )",
-                service1_li2: "Analyse des granulats et ciment",
+                service1_li2: "Analyse des granulats et ciment et sols",
                 service1_li3: "Contrôle des matériaux routiers",
                 service1_li4: "Suivi de formulation béton et Bitume",
                 service2_title: "⛰️ Géotechnique & Sols",
@@ -833,11 +868,11 @@
                 service6_li4: "Rapports techniques",
                 acc_title: "Nos Agréments Officiels",
                 acc_subtitle: "Garantie de compétence et de conformité légale",
-                acc1_title: "Ministère de l'Habitat",
-                acc1_desc: "Organisme de bâtiment agréé",
+                acc1_title: "Expert en Génie civil",
+                acc1_desc: "Agréé par le MHUV ",
                 acc2_title: "Expert Judiciaire",
-                acc2_desc: "Agréé par les Cours et Tribunaux",
-                acc3_title: "Expert Assurance",
+                acc2_desc: "Agréé et assermenté au près des Cours et Tribunaux",
+                acc3_title: "Expert en Assurance",
                 acc3_desc: "Agréé par l'UAR",
                 qr_title: "Accédez Rapidement à Nos Services",
                 qr_subtitle: "Scannez les QR codes pour nous contacter ou accéder à nos services",
@@ -857,13 +892,13 @@
                 mobile_label: "Mobile / WhatsApp / Telegram",
                 hours_label: "Horaires d'ouverture",
                 hours: "Dimanche - Jeudi : 08h00 - 17h00<br>Vendredi - Samedi : Fermé",
-                form_title: "Envoyez-nous votre demande",
+                form_title: "Envoyez-nous votre demande ou CV ",
                 form_name: "Nom complet",
                 form_phone: "Téléphone",
                 form_email: "Email",
                 form_subject: "Sujet",
                 form_subject_placeholder: "Sélectionnez un sujet...",
-                form_subject1: "Devis - Contrôle qualité béton",
+                form_subject1: "Devis - Contrôle qualité Béton-Sol-Route",
                 form_subject2: "Devis - Étude de sol / Géotechnique",
                 form_subject3: "Devis - Topographie",
                 form_subject4: "Expertise / Diagnostic",
@@ -890,7 +925,7 @@
             en: {
                 site_title: "Laboratoire Saidi Ahmed | Quality Control Concrete & Engineering - Akbou, Béjaïa",
                 og_title: "Laboratoire Saidi | Quality Control & Engineering - Akbou",
-                og_description: "Accredited laboratory for quality control of concrete, soil, road and multi-disciplinary engineering office in Akbou, Béjaïa. Approved judicial expert.",
+                og_description: "Accredited laboratory for quality control of concrete, soil, road and  engineering office in Akbou, Béjaïa. Approved judicial expert.",
                 twitter_title: "Laboratoire Saidi | Quality Control & Engineering",
                 twitter_description: "Accredited laboratory for quality control and engineering located in Akbou, Béjaïa",
                 logo_labo: "LABORATOIRE SAIDI",
@@ -901,7 +936,7 @@
                 hero_badge: "🏗️ Expertise & Compliance",
                 hero_title: "Quality Control Laboratory & Engineering Office",
                 hero_subtitle: "Concrete • Soil • Road • Structures",
-                hero_desc: "Specialist in quality control and compliance of materials, and multi-disciplinary accredited engineering office located in Akbou, Béjaïa.",
+                hero_desc: "Specialist in quality control and compliance of materials, and  engineering office located in Akbou, Béjaïa.",
                 hero_btn1: "Request a Free Quote",
                 hero_btn2: "Our Services",
                 stat1: "% Projects Completed",
@@ -950,8 +985,8 @@
                 service6_li4: "Technical reports",
                 acc_title: "Our Official Approvals",
                 acc_subtitle: "Guarantee of competence and legal compliance",
-                acc1_title: "Ministry of Housing",
-                acc1_desc: "Approved building organization",
+                acc1_title: "Civil engineering Expert ",
+                acc1_desc: "Approved by MHUV",
                 acc2_title: "Judicial Expert",
                 acc2_desc: "Approved by Courts and Tribunals",
                 acc3_title: "Insurance Expert",
@@ -1001,13 +1036,13 @@
                 brochure_note: "(Opens a printable brochure in a new window)",
                 footer_copyright: "Laboratoire Saidi Ahmed",
                 footer_location: "Akbou, Béjaïa, Algeria",
-                footer_desc: "Quality control laboratory for materials (Concrete, Soil, Road) & Multi-disciplinary engineering office",
+                footer_desc: "Quality control laboratory for materials (Concrete, Soil, Road) &  engineering office",
                 footer_address: "Cité RHP 130/200, Local E17, Akbou (Behind CASNOS) - GPS: 36.459399, 4.538716"
             },
             ar: {
                 site_title: "مختبر  سعيدي | مراقبة جودة الخرسانة , الهندسة و الخبرة - أقبو، بجاية",
                 og_title: "مختبر  سعيدي | مراقبة الجودة , الهندسة و الخبرة - أقبو",
-                og_description: "مختبر معتمد لمراقبة جودة الخرسانة والتربة والطرق ومكتب هندسي متعدد التخصصات في أقبو، بجاية. خبير قضائي معتمد.",
+                og_description: "مختبر معتمد لمراقبة جودة الخرسانة والتربة والطرق ومكتب الهندسة في أقبو، بجاية. خبير قضائي معتمد و محلف.",
                 twitter_title: "مختبر  سعيدي | مراقبة الجودة , الهندسة و الخبرة",
                 twitter_description: "مختبر معتمد لمراقبة الجودة والهندسة يقع في أقبو، بجاية",
                 logo_labo: "مختبر  سعيدي",
@@ -1016,9 +1051,9 @@
                 nav_services: "الخدمات",
                 nav_contact: "اتصل بنا",
                 hero_badge: "🏗️ خبرة ومطابقة",
-                hero_title: "مختبر مراقبة الجودة ومكتب هندسي",
+                hero_title: "مختبر مراقبة الجودة ومكتب الهندسة",
                 hero_subtitle: "خرسانة • تربة • طرق • منشآت",
-                hero_desc: "متخصص في مراقبة الجودة ومطابقة المواد، ومكتب هندسي متعدد التخصصات معتمد يقع في أقبو، بجاية.",
+                hero_desc: "متخصص في مراقبة الجودة ومطابقة المواد، ومكتب الهندسة معتمد يقع في أقبو، بجاية.",
                 hero_btn1: "طلب عرض سعر مجاني",
                 hero_btn2: "خدماتنا",
                 stat1: "٪ المشاريع المنجزة",
@@ -1067,8 +1102,8 @@
                 service6_li4: "التقارير الفنية",
                 acc_title: "اعتماداتنا الرسمية",
                 acc_subtitle: "ضمان الكفاءة والامتثال القانوني",
-                acc1_title: "وزارة السكن والعمران والمدينة",
-                acc1_desc: "هيئة بناء معتمدة",
+                acc1_title: "خبير في الهندسة المدنية",
+                acc1_desc: "معتمد من طرف وزارة السكن و العمران و المدينة والتهيئة العمرانية  ",
                 acc2_title: "خبير قضائي",
                 acc2_desc: "معتمد ومحلف من قبل المحاكم والمجالس ",
                 acc3_title: "خبير في التأمينات",
@@ -1118,7 +1153,7 @@
                 brochure_note: "(يفتح نسخة قابلة للطباعة من الكتيب في نافذة جديدة)",
                 footer_copyright: "  مختبر سعيدي أحمد",
                 footer_location: "أقبو، بجاية، الجزائر",
-                footer_desc: "مختبر مراقبة جودة المواد (خرسانة، تربة، طرق) ومكتب هندسي متعدد التخصصات والخبرة",
+                footer_desc: "مختبر مراقبة جودة المواد (خرسانة، تربة، طرق) ومكتب الهندسة والخبرة",
                 footer_address: "حي RHP 130/200، محل E17، أقبو (خلف CASNOS) - GPS: 36.459399، 4.538716"
             }
         };
@@ -1148,10 +1183,16 @@
             });
         }
 
-        // Initialisation
-        changeLanguage('fr');
+        // Gestion du clic sur les boutons de langue
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const lang = btn.getAttribute('data-lang');
+            changeLanguage(lang);
+        });
+    });
 
-        // Menu burger
+    // Initialisation par défaut
+    changeLanguage('fr');
         const burger = document.querySelector('.burger');
         const nav = document.querySelector('.nav-links');
         burger.addEventListener('click', () => {

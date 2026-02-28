@@ -496,13 +496,31 @@
             .logo-text span { font-size: 1rem; }
             
             .nav-links {
-                position: fixed; right: 0; top: 0; height: 100vh;
-                background: var(--white); flex-direction: column;
-                align-items: center; justify-content: center;
-                width: 55%; transform: translateX(100%);
+                position: fixed; 
+                right: 0; 
+                top: 0; 
+                height: 100vh;
+                background: var(--white); 
+                flex-direction: column;
+                align-items: center; 
+                justify-content: center;
+                
+                /* CHANGEMENT ICI : Largeur réduite */
+                width: 260px; 
+                max-width: 80%; /* Pour ne jamais dépasser l'écran sur les très petits téléphones */
+                
+                transform: translateX(100%);
                 transition: transform 0.35s ease-in;
-                box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+                box-shadow: -10px 0 30px rgba(0,0,0,0.15); /* Ombre plus fine */
                 z-index: 999;
+            }
+
+            /* Pour la version Arabe (RTL) */
+            body.rtl .nav-links { 
+                right: auto; 
+                left: 0; 
+                transform: translateX(-100%); 
+            }
             }
              body.rtl .nav-links { right: auto; left: 0; transform: translateX(-100%); }
             .nav-links.active { transform: translateX(0); }
@@ -1416,4 +1434,5 @@
     </script>
 </body>
 </html>
+
 
